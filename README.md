@@ -36,10 +36,11 @@ This roadmap is for anyone who wants to learn **Android application penetration 
 
 | Resource | Use | Link |
 |----------|-----|------|
-| 🎥 Mohamed El Desouky — Java for Beginners (AR) | Java language core | [Playlist](https://www.youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f) |
-| 🎥 Mohamed El Desouky — OOP with Java (AR) | Object-oriented Java | [Playlist](https://www.youtube.com/playlist?list=PL1DUmTEdeA6Icttz-O9C3RPRF8R8Px5vk) |
-| 🎥 freeCodeCamp — Android Development for Beginners | Android app-dev concepts | [Video](https://www.youtube.com/watch?v=fis26HvvDII) |
-| 🎓 INE — Mobile App Security & Pentesting (MASPT) | **eMAPT prep spine** | [INE](https://security.ine.com/) |
+| 🎥 Mohamed El Desouky — Java for Beginners **(🇪🇬 Arabic)** | Java language core | [Playlist](https://www.youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f) |
+| 🎥 Mohamed El Desouky — OOP with Java **(🇪🇬 Arabic)** | Object-oriented Java | [Playlist](https://www.youtube.com/playlist?list=PL1DUmTEdeA6Icttz-O9C3RPRF8R8Px5vk) |
+| 🎥 Java Full Course **(🌐 English)** | Java language core — English alternative | [Video](https://www.youtube.com/watch?v=A74TOX803D0) |
+| 🎥 freeCodeCamp — Android Development for Beginners **(🌐 English)** | Android app-dev concepts | [Video](https://www.youtube.com/watch?v=fis26HvvDII) |
+| 🎓 INE — Mobile App Security & Pentesting (MASPT) | **eMAPT prep** — use *if available*; if not, the other resources are enough | [INE](https://security.ine.com/) |
 | 🎥 Udemy — Android App Hacking: Black Belt Edition | Deep hands-on hacking | [Course](https://www.udemy.com/course/android-app-hacking-black-belt-edition/) |
 | 🧩 Hextree.io — Android Security Map | Modern, structured labs | [Hextree](https://app.hextree.io/map/android) |
 | 📖 OWASP MASTG / MASVS | The reference standard | [MASTG](https://mas.owasp.org/MASTG/) |
@@ -53,8 +54,13 @@ This roadmap is for anyone who wants to learn **Android application penetration 
 
 **How to study this phase:** *code along* actively for the fundamentals & OOP (don't just watch). For pure UI/design parts of the freeCodeCamp course, watch at 1.5–2× just for familiarity.
 
-### 0.1 — Java language core — 🎥 El Desouky *Java for Beginners* ⭐ (study all)
-<details><summary>Episode checklist (click to expand)</summary>
+### 0.1 — Java language core ⭐ (study all)
+
+> 🌐 **Choose your language and finish one:**
+> - **🇪🇬 Arabic:** El Desouky *Java for Beginners* (episode checklist below).
+> - **🌐 English:** [Java Full Course](https://www.youtube.com/watch?v=A74TOX803D0) — same fundamentals.
+
+<details><summary>El Desouky (Arabic) episode checklist (click to expand)</summary>
 
 - [ ] 00 Introduction
 - [ ] 01 What is programming?
@@ -108,6 +114,7 @@ This roadmap is for anyone who wants to learn **Android application penetration 
 - [ ] ⏭️ Skim: Layouts, ListView/Spinner, Material Design, RecyclerView, Fonts, Animations, CardView *(developer polish — low priority for security)*
 
 ### 0.4 — Kotlin (reading level, after Java) 📖
+> ℹ️ **Optional at this foundation stage** — Java alone is enough to get started. But it's **strongly recommended later as you advance**, since most modern Android apps are written in Kotlin.
 - [ ] Null-safety (`?`, `!!`), `data class`, `when`/`sealed`, lambdas & higher-order functions, extension functions, basic coroutines — enough to *read* modern apps. [Kotlin Koans](https://play.kotlinlang.org/koans)
 
 **Done when:** you can read an unfamiliar Java class (and a Kotlin one) and explain what it does — classes, inheritance, interfaces, collections, exceptions.
@@ -149,7 +156,7 @@ This roadmap is for anyone who wants to learn **Android application penetration 
 **Resources:**
 - 🎥 Udemy *Black Belt* → **Reverse Engineering** section: *Dex2Jar, Jadx-Gui (+HandsOn), Reversing Apps, Creating a CallGraph/FlowGraph*
 - 🎥 Udemy *Black Belt* → **Decompiling – Preparation/HandsOn**
-- 🧪 Practice: **DIVA**, **InsecureShop** (static parts), your own **DroidSiege**
+- 🧪 Practice: **DIVA**, **InsecureShop** (static parts), **DroidSiege**
 
 **Done when:** you can decompile any APK, find hardcoded secrets/insecure storage, and read the relevant smali.
 **⏱️ Estimate:** ~1.5 weeks.
@@ -204,7 +211,7 @@ This roadmap is for anyone who wants to learn **Android application penetration 
 
 ## 🏁 eMAPT Exam Readiness Checkpoint
 
-After Phases 1–4, plus working through the **INE MASPT** course (your subscription — it is the official prep) and the practice labs, you are ready to sit **[eMAPT](https://security.ine.com/certifications/emapt-certification/)**.
+After Phases 1–4 and the practice labs, you are ready to sit **[eMAPT](https://security.ine.com/certifications/emapt-certification/)**. If you have access to the **INE MASPT** course, use it as the official prep spine; **if not, the rest of the resources here are enough** to prepare.
 
 **About the exam (verify current details on INE):** eMAPT is a **practical** certification — you're given a vulnerable mobile app and must **develop a working exploit** and document it, on your own time (multi-day). It is entry-to-intermediate and focuses on Android app pentesting methodology, not niche SMALI/game-hacking.
 
@@ -242,7 +249,7 @@ After Phases 1–4, plus working through the **INE MASPT** course (your subscrip
 
 | Lab | Focus | Link |
 |-----|-------|------|
-| 🧪 **DroidSiege** (yours) | Level-graded, all OWASP MASVS classes | *(your project)* |
+| 🧪 **DroidSiege** | Intentionally vulnerable app with graded difficulty levels across the OWASP MASVS classes | [repo](https://github.com/0xsl4m/DroidSiege) |
 | 🧪 InjuredAndroid | CTF-style beginner | [repo](https://github.com/B3nac/InjuredAndroid) |
 | 🧪 DIVA | Classic fundamentals | [repo](https://github.com/payatu/diva-android) |
 | 🧪 AndroGoat | Kotlin, broad coverage | [repo](https://github.com/satishpatnayak/AndroGoat) |
@@ -270,7 +277,7 @@ After Phases 1–4, plus working through the **INE MASPT** course (your subscrip
 | 2 | Static analysis & RE | Black Belt / MobSF | ~1.5 wk | ⬜ |
 | 3 | Dynamic, network & components | Black Belt / Drozer / Burp | 1.5–2 wk | ⬜ |
 | 4 | Runtime manipulation (Frida) | Black Belt / Hextree | 1.5–2 wk | ⬜ |
-| 🏁 | **eMAPT readiness** (INE MASPT is the spine) | INE MASPT | **~8–12 wk total** | ⬜ |
+| 🏁 | **eMAPT readiness** (INE MASPT if available, else the rest is enough) | INE MASPT / this roadmap | **~8–12 wk total** | ⬜ |
 | 5 | Advanced (SMALI, native, cross-platform) | Black Belt / Ghidra | 3–5 wk | ⬜ |
 | 6 | Practice labs | *(throughout)* | ongoing | ⬜ |
 
